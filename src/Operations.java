@@ -5,7 +5,11 @@ public class Operations {
         String operation = scanner.nextLine();
         int a = scanner.nextInt();
         int b = scanner.nextInt();
+        int result = 0;
         if (operation.equals("sum"))
-            System.out.println(a + b);
+            result = a + b;
+        else if(operation.equals("sub"))
+            result = a - b;
+        System.out.println("Result: " + result);
     }
 }
